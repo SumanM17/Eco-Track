@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F8FAF9;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(216, 243, 220, 0.35) 0px, transparent 45%),
+      radial-gradient(at 100% 0%, rgba(241, 245, 249, 0.6) 0px, transparent 50%);
+    min-height: 100vh;
+    color: #193027;
+  }
+}
+
+/* Modern Clean Card Component */
+.glass-card {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 1.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03), 0 1px 2px -1px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.glass-card:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Listening Audio Wave Animation */
+@keyframes micPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(231, 111, 81, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(231, 111, 81, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(231, 111, 81, 0);
+  }
+}
+
+.mic-listening-pulse {
+  animation: micPulse 1.5s infinite;
+}
