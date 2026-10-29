@@ -1,5 +1,5 @@
  HEAD
-# CarbonKatha 2.0 🌿
+# Eco Track 🌿
 
 > **AI-Powered Carbon Footprint Tracking, Verification, Reduction, and Rewards Platform for India**  
 > *Built for Hack Fest 2026 • Problem PS-01*
